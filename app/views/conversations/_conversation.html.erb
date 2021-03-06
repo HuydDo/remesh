@@ -1,0 +1,19 @@
+<h2> <%= @conversation.title %> </h2>
+<% @conversation.messages.each do |message| %>
+  <div id=message-<%=message.id%>>
+    <h3><%= message.text %> </h3>
+    <h5> Thoughts: </h5>
+    <ul>
+      <% message.thoughts.each do |thought| %>
+       <li id=thought-<%=thought.id%>> <%= thought.text %> </li>
+      <% end %>
+    </ul>
+    <div class="button button2">
+      <%=link_to "New Thought", "/conversations/#{@conversation.id}/messages/#{message.id}/thoughts/new" %>
+    </div>
+  </div>
+<% end %>
+<br/>
+<div class="button button2">
+  <%=link_to "New Message", "/conversations/#{@conversation.id}/messages/new" %>
+</div>

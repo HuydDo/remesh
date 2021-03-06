@@ -65,6 +65,13 @@
  font-size: 16px;
  margin: 4px 2px;
  cursor: pointer;
+ border-radius: 8px;
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  /* opacity: 0.5; */
+  background-color: #e7e7e7;
 }
 
 a, a:visited {
@@ -76,7 +83,7 @@ a:hover {
 }
 
 .button a {
-  text-decoration-color:rgb(4, 0, 255);
+ /* text-decoration-color:rgb(4, 0, 255); */
  text-decoration: none;
 }
 

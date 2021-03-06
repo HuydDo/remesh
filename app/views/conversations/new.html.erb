@@ -1,0 +1,8 @@
+<h2>Add New Conversation</h2>
+
+<%= form_tag conversations_path do %>
+    <%= label_tag :title %>
+    <%= text_field_tag :title %>
+    <%= button_tag 'Add Conversation' %>
+<% end %>
+
