@@ -1,5 +1,5 @@
 <%= render "conversations/conversation" %>
-<h2>Add New Message</h2>
+<h4>Add New Message</h4>
 <%= form_tag("/conversations/#{@conversation.id}/messages", method: :post) do %>
   <%= label_tag :text %>
   <%= text_field_tag :text %>
