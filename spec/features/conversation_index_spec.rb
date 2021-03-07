@@ -20,7 +20,7 @@ describe "Conversation Index Page", type: :feature do
     fill_in(:title, :with => "Cars")
     click_button("Add Conversation")
     expect(current_path).to eq("/conversations")
-    expect(page).to have_content("Conversation Cars Created")
+    expect(page).to have_content("Conversation Cars Added")
     expect(Conversation.all.count).to eq(3)
   end
 

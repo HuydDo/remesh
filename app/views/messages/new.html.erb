@@ -1,4 +1,3 @@
-<%= render "conversations/conversation" %>
 <h4>Add a New Message</h4>
 <%= form_tag("/conversations/#{@conversation.id}/messages", method: :post) do %>
   <%= label_tag :text %>

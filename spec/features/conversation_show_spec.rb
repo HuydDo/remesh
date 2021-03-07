@@ -26,17 +26,4 @@ require 'rails_helper'
     expect(page).to have_content("C# 9 and .NET 5")
   end
 
-  it "adds a new thought" do
-    visit "/conversations/#{@conversation1.id}"
-    within "#message-#{@message1.id}" do
-      click_link("New Thought")
-      fill_in(:text, with: "Best C# Book")
-      click_button("Add Thought")
-    end
-    comment = Thought.last
-    within "#thought-#{comment.id}" do
-      expect(page).to have_content("Best C# Book")
-    end
-  end
-
 end

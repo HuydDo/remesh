@@ -20,7 +20,7 @@
    and navigate to ```localhost:3000``` in your browser
 
  ### Testing
- *  Open new terminal or you can close the running server by ```Ctrl + C```.  Then un ```rspec``` or ```bundle exec rspec```  passes 18 tests
+ *  Open new terminal or you can close the running server by ```Ctrl + C```.  Then un ```rspec``` or ```bundle exec rspec```  passes 17 tests
 
 ### Additional features
  * Add more styling
