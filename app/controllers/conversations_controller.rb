@@ -10,7 +10,7 @@ class ConversationsController < ApplicationController
   def create
     conversation = Conversation.create(title: params[:title], start_date: Date.today)
     if conversation.save
-      flash[:success] = "Conversation #{conversation.title} Started!"
+      flash[:success] = "Conversation #{conversation.title} Created."
       redirect_to "/conversations"
     else
       flash[:error] = "#{conversation.errors.full_messages.to_sentence}"
