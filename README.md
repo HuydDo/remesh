@@ -1,24 +1,29 @@
-# README
+### Description
+   Remesh app.  You can create new conversation(s), message(s)for conversion, and thought(s)for message.  You can search for conversations by title. The app uses a postgresSQL database.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Instructions
+   Ruby version 2.7.1 & Rails version 6.0.3
+ In your terminal
+ * Clone the repo ```git clone git@github.com:HuydDo/remesh.git```
 
-Things you may want to cover:
+ * Change dir into repository ```cd remesh```
 
-* Ruby version
+ * Run ```bundle install``` installs the dependencies
 
-* System dependencies
+ * Run ```rails db:create``` creates a database
 
-* Configuration
+ * Run ```rails db:migrate``` runs (single) migrations that have not run yet.
 
-* Database creation
+ * Run ```rails db:seed``` runs the db/seed.rb file
 
-* Database initialization
+ * Run ```rails s```
+   and navigate to ```localhost:3000``` in your browser
 
-* How to run the test suite
+ ### Testing
+ *  Open new terminal or you can close the running server by ```Ctrl + C```.  Then un ```rspec``` or ```bundle exec rspec```  passes 18 tests
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Additional features
+ * Add more styling
+ * Create dynamic search
+ * Add links to navigate between pages
+ * Delete conversations

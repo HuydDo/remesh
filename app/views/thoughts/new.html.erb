@@ -9,7 +9,7 @@
       <% end %>
     </ul>
     <% if message == @message %>
-        <h4>Add New Thought</h4>
+        <h4>Add a New Thought</h4>
           <%= form_tag("/conversations/#{@message.conversation.id}/messages/#{@message.id}/thoughts", method: :post) do %>
             <%= label_tag :text %>
             <%= text_field_tag :text %>
