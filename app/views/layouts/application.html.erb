@@ -13,12 +13,20 @@
     <div class = "nav">
       <%= link_to "All Conversations", "/"%>
     </div>
-
+<!--
     <% flash.each do |type, message| %>
-      <div class= "<%=type%>-flash">
+      <div class= "<%=type%>">
         <p><%= message %></p>
       </div>
     <% end %>
+
+ -->
+
+
+     <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, class: name %>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
