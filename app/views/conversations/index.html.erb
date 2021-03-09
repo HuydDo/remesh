@@ -2,9 +2,13 @@
 
 <div class="search">
 <h4>Search by Conversation Title:</h4>
-<%= form_tag("/conversations/search", :method => :get) do %>
-  <%= text_field_tag(:search, params[:search]) %>
-  <%= submit_tag ("Search") %>
+  <%# form_tag("/conversations/search", :method => :get) do %>
+  <%# text_field_tag(:search, params[:search]) %>
+  <%= form_tag conversations_path, method: :get do %>
+
+  <%= text_field_tag(:query, params[:query]) %>
+
+  <%= submit_tag "Search", title: nil %>
 <% end %>
 </div>
 

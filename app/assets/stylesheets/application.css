@@ -43,13 +43,13 @@
  padding-right: 30px;
 }
 
-.success{
+.success-flash{
  padding: 10px;
  background-color: #4be4a4;
  color: white;
 }
 
-.error {
+.error-flash {
  padding: 10px;
  background-color: red;
  color: white;

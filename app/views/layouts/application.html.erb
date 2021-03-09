@@ -15,7 +15,7 @@
     </div>
 <!--
     <% flash.each do |type, message| %>
-      <div class= "<%=type%>">
+         <div class= "<%=type%>-flash">
         <p><%= message %></p>
       </div>
     <% end %>
@@ -24,7 +24,8 @@
 
 
      <% flash.each do |name, msg| %>
-      <%= content_tag :div, msg, class: name %>
+      <%# content_tag :div, msg, class: name %>
+      <%= content_tag :div, msg, class: name+"-flash" %>
     <% end %>
 
     <%= yield %>
